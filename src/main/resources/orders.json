@@ -1,0 +1,42 @@
+[
+  {
+    "id": "7181e45a-b395-4167-9a65-0800b4675704",
+    "table": {
+      "id": "d3eeb615-c539-46e7-b6e2-355ab487c18a",
+      "numOfTable": 9
+    },
+    "waiter": {
+      "id": "e0f3d5a1-4d1f-4bba-9e7d-7f64611e89db",
+      "fullName": "murod",
+      "finishOrders": 1
+    },
+    "dishes": [
+      {
+        "id": "54d73098-0685-4ef6-a488-12b98bb727f3",
+        "name": "osh",
+        "price": 200
+      }
+    ],
+    "active": false
+  },
+  {
+    "id": "5c4df727-19e9-494f-ae81-bac131fce2ee",
+    "table": {
+      "id": "863c50de-4e45-4906-aca4-807724471e14",
+      "numOfTable": 8
+    },
+    "waiter": {
+      "id": "0a119002-0e64-4cc9-b194-3468a6319c33",
+      "fullName": "aziz",
+      "finishOrders": 1
+    },
+    "dishes": [
+      {
+        "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
+        "name": "plov",
+        "price": 100
+      }
+    ],
+    "active": false
+  }
+]
