@@ -18,7 +18,6 @@ public class DB {
     public static List<Dish> dishes = new ArrayList<>();
     public static List<Table> tables = new ArrayList<>();
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    public static Map<Waiter, Long> statistic = new HashMap<>();
 
     static {
         readTables();
