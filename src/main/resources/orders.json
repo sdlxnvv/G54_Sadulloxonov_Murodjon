@@ -17,7 +17,7 @@
         "price": 200
       }
     ],
-    "active": false
+    "active": true
   },
   {
     "id": "5c4df727-19e9-494f-ae81-bac131fce2ee",
@@ -37,6 +37,6 @@
         "price": 100
       }
     ],
-    "active": false
+    "active": true
   }
 ]
