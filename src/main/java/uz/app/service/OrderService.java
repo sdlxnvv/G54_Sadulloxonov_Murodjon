@@ -68,7 +68,6 @@ public class OrderService {
             }
         }
         System.out.println("Total waiters: " + sum);
-        DB.statistic = sum;
     }
 
 
