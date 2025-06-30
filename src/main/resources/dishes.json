@@ -1,12 +1,22 @@
 [
   {
     "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
-    "name": "plov",
+    "name": "murod",
     "price": 100
   },
   {
     "id": "54d73098-0685-4ef6-a488-12b98bb727f3",
-    "name": "osh",
+    "name": "ali",
     "price": 200
+  },
+  {
+    "id": "d9605531-f329-4324-a4ac-16070156034c",
+    "name": "vali",
+    "price": 100
+  },
+  {
+    "id": "38065cd0-878c-4beb-b459-f387fce5cc41",
+    "name": "plov",
+    "price": 100
   }
 ]

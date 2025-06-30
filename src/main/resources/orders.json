@@ -17,7 +17,7 @@
         "price": 200
       }
     ],
-    "active": true
+    "active": false
   },
   {
     "id": "5c4df727-19e9-494f-ae81-bac131fce2ee",
@@ -34,9 +34,59 @@
       {
         "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
         "name": "plov",
+        "price": 500
+      }
+    ],
+    "active": false
+  },
+  {
+    "id": "06d1d3d7-9e6e-4f00-947e-1c98c25d1752",
+    "table": {
+      "id": "a780581d-b008-4f9d-867d-97861031932d",
+      "numOfTable": 0
+    },
+    "waiter": {
+      "id": "0a119002-0e64-4cc9-b194-3468a6319c33",
+      "fullName": "aziz",
+      "finishOrders": 2
+    },
+    "dishes": [
+      {
+        "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
+        "name": "plov",
+        "price": 100
+      },
+      {
+        "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
+        "name": "plov",
         "price": 100
       }
     ],
-    "active": true
+    "active": false
+  },
+  {
+    "id": "39ea6ad0-f0ee-4bfd-8e5c-b71fa54a4712",
+    "table": {
+      "id": "4fb4414b-7a5d-44a4-b63d-71b152aee40a",
+      "numOfTable": 1
+    },
+    "waiter": {
+      "id": "e0f3d5a1-4d1f-4bba-9e7d-7f64611e89db",
+      "fullName": "murod",
+      "finishOrders": 1
+    },
+    "dishes": [
+      {
+        "id": "a652b14a-1766-4c5c-85d2-0010b8bea352",
+        "name": "plov",
+        "price": 100
+      },
+      {
+        "id": "38065cd0-878c-4beb-b459-f387fce5cc41",
+        "name": "plov",
+        "price": 100
+      }
+    ],
+    "active": false
   }
 ]

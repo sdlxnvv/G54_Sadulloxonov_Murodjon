@@ -18,7 +18,6 @@ public class DB {
     public static List<Dish> dishes = new ArrayList<>();
     public static List<Table> tables = new ArrayList<>();
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    public static Map<Waiter, Long> statistic = new HashMap<>();
 
     static {
         readTables();
@@ -29,21 +28,21 @@ public class DB {
 
     @SneakyThrows
     public static void writeWaiters() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/waiters.json"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/waiters.json"))) {
             writer.write(gson.toJson(waiters));
         }
     }
 
     @SneakyThrows
     public static void writeOrders() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/orders.json"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/orders.json"))) {
             writer.write(gson.toJson(orders));
         }
     }
 
     @SneakyThrows
     public static void writeDishes() {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/dishes.json"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/main/resources/dishes.json"))) {
             writer.write(gson.toJson(dishes));
         }
     }
@@ -52,7 +51,7 @@ public class DB {
 
     @SneakyThrows
     public static void readDishes() {
-        File file = new File("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/dishes.json");
+        File file = new File("src/main/resources/dishes.json");
         if (!file.exists() || file.length() == 0) {
             dishes = new ArrayList<>();
             return;
@@ -74,7 +73,7 @@ public class DB {
 
     @SneakyThrows
     public static void readOrders() {
-        File file = new File("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/orders.json");
+        File file = new File("src/main/resources/orders.json");
         if (!file.exists() || file.length() == 0) {
             orders = new ArrayList<>();
             return;
@@ -96,7 +95,7 @@ public class DB {
 
     @SneakyThrows
     public static void readTables() {
-        File file = new File("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/tables.json");
+        File file = new File("src/main/resources/tables.json");
         if (!file.exists() || file.length() == 0) {
             tables = new ArrayList<>();
             return;
@@ -118,7 +117,7 @@ public class DB {
 
     @SneakyThrows
     public static void readWaiters() {
-        File file = new File("/Users/murodsadulloxonov/Desktop/works/projects/module5/G54_Sadulloxonov_Murodjon/src/main/resources/waiters.json");
+        File file = new File("src/main/resources/waiters.json");
         if (!file.exists() || file.length() == 0) {
             waiters = new ArrayList<>();
             return;
