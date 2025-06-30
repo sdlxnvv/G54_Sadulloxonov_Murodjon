@@ -67,7 +67,8 @@ public class OrderService {
                 }
             }
         }
-        sum.forEach((k, v) -> System.out.println(k.getFullName()+" = finish orders: " + k.getFinishOrders()  + ", sum- " + v));
+        System.out.println("Total waiters: " + sum);
+        DB.statistic = sum;
     }
 
 
@@ -115,12 +116,10 @@ public class OrderService {
         for (Order o : DB.orders) {
             if (o.getId().equals(orderId) && o.getActive().equals(true)) {
                 order = o;
+            } else {
+                System.out.println("May you input not active order");
+                return;
             }
-        }
-
-        if (order == null) {
-            System.out.println("May you choose another order");
-            return;
         }
 
         showDishes();
@@ -170,7 +169,6 @@ public class OrderService {
                     o.setActive(false);
                 } else {
                     System.out.println("No found waiter!");
-                    return;
                 }
 
                 if (o.getActive()) {
