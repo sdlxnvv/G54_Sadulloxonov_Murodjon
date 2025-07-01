@@ -43,6 +43,9 @@ public class OrderService {
                     3. show orders
                     4. close order
                     5. show statistics
+                    6. show waiters
+                    7. show dishes
+                    8. show tables
                     
                     0. exit
                     """);
@@ -52,9 +55,32 @@ public class OrderService {
                 case 3 -> showOrders();
                 case 4 -> closeOrder();
                 case 5 -> showStatistics();
+                case 6 -> showWaiters();
+                case 7 -> showDishes();
+                case 8 -> showTables();
                 case 0 -> isExit = true;
                 default -> System.out.println("Invalid input!");
             }
+        }
+    }
+
+    private void showTables() {
+        if (DB.tables.isEmpty()) {
+            System.out.println("Nothing to show!");
+        } else {
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            DB.tables.forEach(System.out::println);
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        }
+    }
+
+    private void showWaiters() {
+        if (DB.waiters.isEmpty()) {
+            System.out.println("Nothing to show!");
+        } else {
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            DB.waiters.forEach(System.out::println);
+            System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
     }
 
@@ -68,7 +94,6 @@ public class OrderService {
             }
         }
         System.out.println("Total waiters: " + sum);
-        DB.statistic = sum;
     }
 
 
